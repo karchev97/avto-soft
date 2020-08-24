@@ -1,0 +1,98 @@
+@media (max-width: 575px) {
+    .container-header {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .navbar-expand-lg .navbar-nav-right .nav-link {
+        padding: 15px 25px;
+    }
+    .navbar {
+        max-width: 100%;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
+        margin-left: 0;
+        padding: 15px 25px;
+    }
+    .navbar-expand-lg .navbar-nav .nav-item {
+        margin-top: 0;
+        &:not(:first-child) .nav-link {
+            border-top: 0;
+        }
+    }
+    .navbar-nav .dropdown-item {
+        padding-left: 30px;
+    }
+    .h1-title {
+        font-size: 20px;
+        margin: 20px 0 10px;
+    }
+    .order-header {
+        display: none;
+    }
+    .order-item {
+        padding: 15px;
+        margin-bottom: 7px;
+        &>div {
+            margin-bottom: 12px;
+        }
+    }
+    .container-table {
+        max-width: 90%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .container-header {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .navbar-expand-lg .navbar-nav-right .nav-link {
+        padding: 15px 25px;
+    }
+    .navbar {
+        max-width: 100%;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
+        margin-left: 0;
+    }
+    .navbar-expand-lg .navbar-nav .nav-item {
+        margin-top: 0;
+        &:not(:first-child) .nav-link {
+            border-top: 0;
+        }
+    }
+    .navbar-nav .dropdown-item {
+        padding-left: 30px;
+    }
+    .container-table {
+        max-width: 90%;
+    }
+    .order-items {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .navbar {
+        max-width: 100%;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
+        margin-left: 0;
+    }
+    .navbar-expand-lg .navbar-nav .nav-item {
+        margin-top: 0;
+        &:not(:first-child) .nav-link {
+            border-top: 0;
+        }
+    }
+    .container-table {
+        max-width: 95%;
+    }
+    .order-items {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+@media (min-width: 1200px) {}
