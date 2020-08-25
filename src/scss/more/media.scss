@@ -42,6 +42,15 @@
     .money-info {
         justify-content: space-between;
     }
+    .filter-buttons-cont {
+        justify-content: flex-end;
+    }
+    .filter-date-input {
+        width: 72%;
+    }
+    .filter-column {
+        align-items: end;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -72,6 +81,14 @@
     }
     .order-items {
         max-width: 100%;
+    }
+    .filter-date-input {
+        width: 72%;
+    }
+    .filter-buttons-cont {
+        justify-content: flex-end;
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
 }
 

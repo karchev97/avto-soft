@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+</head>
+
+<body class="body-gray">
+    <!-- Шапка -->
+    <div class="container-fluid container-header">
+        <nav class="container navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#">Avto-soft</a>
+
+            <button class="navbar-toggler hamburger hamburger--collapse" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Мои заказы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Транзакции</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Файлы</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link user-name dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Matt McGuire
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Выйти</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container container-offset container-table">
+        <h1 class="h1-title">Поиск заказа</h1>
+        <div class="row filters-block">
+            <div class="col-12 col-sm-6">
+                <div class="radio-group filter-group">
+                    <label class="custom-radio">Только избранное
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="custom-radio">Все
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 filter-column">
+                <div class="form-group form-group-sign form-group-filter">
+                    <label class="label-input" for="min-num">Цена от:</label>
+                    <input type="number" class="form-control" id="min-num" name="">
+                </div>
+                <div class="form-group form-group-sign form-group-filter">
+                    <label class="label-input" for="max-num">Цена до:</label>
+                    <input type="number" class="form-control" id="max-num" name="">
+                </div>
+            </div>
+            <div class="col-12 col-sm-8 filter-column">
+                <div class="form-group form-group-sign form-group-filter">
+                    <label class="label-input" for="min-date">Дата от:</label>
+                    <input type="date" class="form-control filter-date-input" id="min-date" name="">
+                </div>
+                <div class="form-group form-group-sign form-group-filter">
+                    <label class="label-input" for="max-date">Дата до:</label>
+                    <input type="date" class="form-control filter-date-input" id="max-date" name="">
+                </div>
+            </div>
+            <div class="col-12 col-sm-4">
+                <div class="radio-group filter-group">
+                    <label class="custom-radio">Я исполнитель
+                        <input type="checkbox" name="radio">
+                        <span class="checkmark checkmark-checkbox"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="dropdown show">
+                    <button type="button" class="btn signup-next signup-next-first dropdown-toggle dropdown-toggle-filter" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Виды работ
+                    </button>
+
+                    <div class="dropdown-menu dropdown-menu-filter">
+                        <label class="custom-radio">Дефектовка
+                            <input type="checkbox" checked="checked" name="radio">
+                            <span class="checkmark checkmark-checkbox"></span>
+                        </label>
+                        <label class="custom-radio">Проточка
+                            <input type="checkbox" name="radio">
+                            <span class="checkmark checkmark-checkbox"></span>
+                        </label>
+                        <label class="custom-radio">Покраска
+                            <input type="checkbox" name="radio">
+                            <span class="checkmark checkmark-checkbox"></span>
+                        </label>
+                        <label class="custom-radio">Диагностика
+                            <input type="checkbox" name="radio">
+                            <span class="checkmark checkmark-checkbox"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row order-header d-none d-md-flex">
+            <div class="col-sm-2">Название</div>
+            <div class="col-sm-2">Марка/модель авто</div>
+            <div class="col-sm-1">Цена</div>
+            <div class="col-sm-2">Исполнитель</div>
+            <div class="col-sm-1">Срок исполнения</div>
+            <div class="col-sm-2">Вид работ</div>
+        </div>
+        <div class="container order-items">
+            <div class="row order-item">
+                <div class="col-6 col-sm-4 col-md-2"><span class="d-block d-md-none">Название: </span>Скрутить колеса и еще какой-то текст для объема, что бы было нагляднее</div>
+                <div class="col-6 col-sm-4 col-md-2"><span class="d-block d-md-none">Марка/модель авто: </span>Skoda Octavia A7 1.4TSI AMT</div>
+                <div class="col-6 col-sm-4 col-md-1"><span class="d-block d-md-none">Цена: </span>20.000 руб.</div>
+                <div class="col-6 col-sm-4 col-md-2"><span class="d-block d-md-none">Исполнитель: </span>Вася</div>
+                <div class="col-6 col-sm-4 col-md-1"><span class="d-block d-md-none">Срок исполнения: </span>1 день</div>
+                <div class="col-6 col-sm-4 col-md-2"><span class="d-block d-md-none">Вид работ: </span>Дефектовка</div>
+                <div class="col-12 col-sm-12 col-md-2">
+                    <div class="slider-buttons-cont filter-buttons-cont">
+                        <button type="button" class="btn btn-warning order-accept">Принять</button>
+                        <button type="button" class="btn btn-warning order-igonre">Отклонить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row order-item">
+                <div class="col-6 col-sm-2"><span class="d-block d-sm-none">Название: </span>Скрутить колеса и еще какой-то текст для объема, что бы было нагляднее</div>
+                <div class="col-6 col-sm-2"><span class="d-block d-sm-none">Марка/модель авто: </span>Skoda Octavia A7 1.4TSI AMT</div>
+                <div class="col-6 col-sm-1"><span class="d-block d-sm-none">Цена: </span>20.000 руб.</div>
+                <div class="col-6 col-sm-1"><span class="d-block d-sm-none">Исполнитель: </span>Вася</div>
+                <div class="col-6 col-sm-1"><span class="d-block d-sm-none">Срок исполнения: </span>1 день</div>
+                <div class="col-6 col-sm-2"><span class="d-block d-sm-none">Вид работ: </span>Дефектовка</div>
+                <div class="col-6 col-sm-3">
+                    <div class="slider-buttons-cont filter-buttons-cont">
+                        <button type="button" class="btn btn-warning order-accept">Принять</button>
+                        <button type="button" class="btn btn-warning order-igonre">Отклонить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row order-item">
+                <div class="col-6 col-sm-2"><span class="d-block d-sm-none">Название: </span>Скрутить колеса и еще какой-то текст для объема, что бы было нагляднее</div>
+                <div class="col-6 col-sm-2"><span class="d-block d-sm-none">Марка/модель авто: </span>Skoda Octavia A7 1.4TSI AMT</div>
+                <div class="col-6 col-sm-1"><span class="d-block d-sm-none">Цена: </span>20.000 руб.</div>
+                <div class="col-6 col-sm-1"><span class="d-block d-sm-none">Исполнитель: </span>Вася</div>
+                <div class="col-6 col-sm-1"><span class="d-block d-sm-none">Срок исполнения: </span>1 день</div>
+                <div class="col-6 col-sm-2"><span class="d-block d-sm-none">Вид работ: </span>Дефектовка</div>
+                <div class="col-6 col-sm-3">
+                    <div class="slider-buttons-cont filter-buttons-cont">
+                        <button type="button" class="btn btn-warning order-accept">Принять</button>
+                        <button type="button" class="btn btn-warning order-igonre">Отклонить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

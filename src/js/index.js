@@ -15,7 +15,9 @@ $('.sign-up-slider').slick({
 
 $('.mask-card-number').mask('9999 9999 9999 9999');
 
-
+$('.dropdown-menu-filter').on('click', function(e) {
+    e.stopPropagation();
+});
 
 // hamburg init
 var forEach = function(t, o, r) {

@@ -18,8 +18,7 @@ module.exports = {
         filename: 'bundle.js',
     },
     module: {
-        rules: [
-            {
+        rules: [{
                 test: /\.js$/,
                 use: 'babel-loader',
                 exclude: /node_modules/
@@ -34,8 +33,7 @@ module.exports = {
             {
                 test: /\.scss$/,
                 use: ExtractTextPlugin.extract({
-                    use: [
-                        {
+                    use: [{
                             loader: 'css-loader',
                             options: {
                                 url: false,
@@ -47,7 +45,7 @@ module.exports = {
                         {
                             loader: 'postcss-loader',
                             options: {
-                                plugins: function () {
+                                plugins: function() {
                                     return [
                                         require('autoprefixer')
                                     ];
@@ -60,11 +58,9 @@ module.exports = {
             {
                 test: /\.css$/,
                 use: ExtractTextPlugin.extract({
-                    use: [
-                        {
-                            loader: 'css-loader',
-                        },
-                    ]
+                    use: [{
+                        loader: 'css-loader',
+                    }, ]
                 })
             }
         ]
@@ -77,8 +73,7 @@ module.exports = {
             minify: false
         })),
         new CopyWebpackPlugin({
-            patterns: [
-                {
+            patterns: [{
                     from: './src/fonts',
                     to: './fonts'
                 },
@@ -90,7 +85,7 @@ module.exports = {
         }),
         new CleanWebpackPlugin(),
         new ExtractTextPlugin({
-            filename: './css/index.css',
+            filename: './css/index.[hash].css',
             allChunks: true,
         }),
     ],
