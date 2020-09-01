@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль</title>
+</head>
+
+<body class="body-gray">
+    <!-- Шапка -->
+    <div class="container-fluid container-header">
+        <nav class="container navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#">Avto-soft</a>
+
+            <button class="navbar-toggler hamburger hamburger--collapse" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Мои заказы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Транзакции</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Файлы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Найти заказ</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link user-name dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Matt McGuire
+                    </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Выйти</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="container profile-container">
+        <div class="row">
+            <div class="col-12 col-sm-3 col-md-2 profile-container__ava">
+                <div>
+                    <img src="./img/girl.jpg" alt="Avatar">
+                </div>
+            </div>
+            <div class="col-12 col-sm-9 col-md-10">
+                <div class="row">
+                    <div class="col-sm-12 profile-container__name">Петрова Кристина Сергеевна</div>
+                    <div class="col-6 col-md-5 col-lg-4 col-xl-3 order-info-items">
+                        <strong>Дата рождения:</strong> 01.09.2020
+                    </div>
+                    <div class="col-6 col-md-5 col-lg-4 col-xl-3 order-info-items">
+                        <strong>Пол:</strong> Женский
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-md-5 col-lg-4 col-xl-3 order-info-items">
+                        <strong>Адрес:</strong> Белгород, Россия
+                    </div>
+                    <div class="col-6 col-md-5 col-lg-4 col-xl-3 order-info-items">
+                        <strong>Процент выплат:</strong> 78.99%
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-8 order-info-items">
+                        <strong>О себе:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, tempora fugit, explicabo aliquam reiciendis eius asperiores, voluptate similique quia incidunt quidem! Fugiat eveniet nihil maiores quis
+                        fugit eius alias unde.
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 profile-container__review_title">Отзывы (6):</div>
+                    <div class="col-12 col-lg-9">
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active cool-reviews" data-toggle="tab" href="#cool">
+                                    <img src="./img/like.svg" alt="Like" width="16px" height="16px"> Положительные (3)
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link bad-reviews" data-toggle="tab" href="#bad">
+                                    <img src="./img/dislike.svg" alt="Like" width="16px" height="16px">Отрицательные (1)
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#ffty">Нейтральные (2)</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="cool">
+                                <div class="review">
+                                    <div class="review__name">Иванов Иван</div>
+                                    <div class="review__link">
+                                        <a href="#">Очередной заказ</a>
+                                    </div>
+                                    <div class="review__text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolore velit, eaque dolorum incidunt corrupti consequuntur ratione maxime quos quae?
+                                    </div>
+                                </div>
+                                <div class="review">
+                                    <div class="review__name">Иванов Иван</div>
+                                    <div class="review__link">
+                                        <a href="#">Очередной заказ</a>
+                                    </div>
+                                    <div class="review__text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolore velit, eaque dolorum incidunt corrupti consequuntur ratione maxime quos quae?
+                                    </div>
+                                </div>
+                                <div class="review">
+                                    <div class="review__name">Иванов Иван</div>
+                                    <div class="review__link">
+                                        <a href="#">Очередной заказ</a>
+                                    </div>
+                                    <div class="review__text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolore velit, eaque dolorum incidunt corrupti consequuntur ratione maxime quos quae?
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="bad">
+                                <div class="review">
+                                    <div class="review__name">Иванов Иван</div>
+                                    <div class="review__link">
+                                        <a href="#">Очередной заказ</a>
+                                    </div>
+                                    <div class="review__text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolore velit, eaque dolorum incidunt corrupti consequuntur ratione maxime quos quae?
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="ffty">
+                                <div class="review">
+                                    <div class="review__name">Иванов Иван</div>
+                                    <div class="review__link">
+                                        <a href="#">Очередной заказ</a>
+                                    </div>
+                                    <div class="review__text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolore velit, eaque dolorum incidunt corrupti consequuntur ratione maxime quos quae?
+                                    </div>
+                                </div>
+                                <div class="review">
+                                    <div class="review__name">Иванов Иван</div>
+                                    <div class="review__link">
+                                        <a href="#">Очередной заказ</a>
+                                    </div>
+                                    <div class="review__text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolore velit, eaque dolorum incidunt corrupti consequuntur ratione maxime quos quae?
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

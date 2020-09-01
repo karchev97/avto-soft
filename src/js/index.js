@@ -5,6 +5,7 @@ import 'slick-carousel'
 import './mask.js'
 import '../scss/index.scss'
 
+// Init sliders
 $('.sign-up-slider').slick({
     prevArrow: $('.signup-prev'),
     nextArrow: $('.signup-next'),
@@ -13,14 +14,25 @@ $('.sign-up-slider').slick({
     swipe: false,
 });
 
+$('.add-order-slider').slick({
+    prevArrow: $('.signup-prev'),
+    nextArrow: $('.signup-next'),
+    draggable: false,
+    infinite: false,
+    swipe: false,
+});
+
+// Init mask's for inputs
 $('.mask-card-number').mask('9999 9999 9999 9999');
 
 $('.dropdown-menu-filter').on('click', function(e) {
     e.stopPropagation();
 });
 
-// Вывод списка выбранных файлов
+// Show list of the files
 function handleFileSelect(evt) {
+    evt.stopPropagation();
+    evt.preventDefault();
     var files = evt.target.files;
 
     var output = [];
@@ -30,9 +42,12 @@ function handleFileSelect(evt) {
     document.getElementById('file-list').innerHTML = output.join('');
 }
 
-document.getElementById('file-input').addEventListener('change', handleFileSelect, false);
+let file_input = document.getElementById('file-input');
+if (file_input) {
+    file_input.addEventListener('change', handleFileSelect);
+}
 
-// hamburg init
+// Hamburg init
 var forEach = function(t, o, r) {
     if ("[object Object]" === Object.prototype.toString.call(t))
         for (var c in t) Object.prototype.hasOwnProperty.call(t, c) && o.call(r, t[c], c, t);
@@ -48,3 +63,26 @@ if (hamburgers.length > 0) {
         }, false);
     });
 }
+
+// DRAG & DROP files
+function handleFileSelect2(evt) {
+    evt.stopPropagation();
+    evt.preventDefault();
+    var files = evt.dataTransfer.files;
+    var output = [];
+    for (var i = 0, f; f = files[i]; i++) {
+        output.push('<label class="custom-radio">' + escape(f.name) + '<input type="checkbox" name=""><span class="checkmark checkmark-checkbox" title="Показывать только выбранному исполнителю"></span></label>');
+    }
+    document.getElementById('file-list').innerHTML = output.join('');
+}
+
+function handleDragOver(evt) {
+    evt.stopPropagation();
+    evt.preventDefault();
+    evt.dataTransfer.dropEffect = 'copy'; // Explicitly show this is a copy.
+}
+
+// Setup the Drag n' Drop listeners.
+var dropZone = document.getElementById('drop_zone');
+dropZone.addEventListener('dragover', handleDragOver, false);
+dropZone.addEventListener('drop', handleFileSelect2, false);

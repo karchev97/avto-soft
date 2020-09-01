@@ -14,10 +14,10 @@
             <a class="navbar-brand" href="#">Avto-soft</a>
 
             <button class="navbar-toggler hamburger hamburger--collapse" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="hamburger-box">
-                  <span class="hamburger-inner"></span>
-                </span>
-              </button>
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
@@ -35,8 +35,8 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link user-name dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Matt McGuire
-                        </a>
+                        Matt McGuire
+                    </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="#">Выйти</a>
                         </div>
@@ -45,108 +45,144 @@
             </div>
         </nav>
     </div>
-
-    <!-- Блок регистрации -->
     <div class="container container-sign">
         <div class="row">
-            <div class="col-sm-12 offset-sm-0 col-md-12 offset-md-0 col-lg-10 offset-lg-1">
+            <div class="col-sm-12 offset-sm-0 col-md-12 offset-md-0 col-lg-8 offset-lg-2">
                 <h1 class="h1-title text-center">Создание заказа</h1>
-                <div>
-                    <!-- <div class="sign-up-step">Шаг 1. Заполните форму</div> -->
-                    <form action="" method="">
-                        <div class="row form-group form-group-sign form-group-add-order">
-                            <div class="col-sm-6 col-md-6">
-                                <label class="label-input" for="name-input">Название</label>
-                                <input type="text" class="form-control" id="name-input" placeholder="Название" autocomplete="off" name="">
+
+                <div class="add-order-slider">
+                    <div class="sign-up-slider-item form-group-add-order">
+                        <div class="sign-up-step">Шаг 1. Заполните основные данные</div>
+
+                        <div class="row ">
+                            <div class="col-md-6">
+                                <div class="form-group form-group-sign">
+                                    <label class="label-input" for="name-input">Название</label>
+                                    <input type="text" class="form-control" id="name-input" placeholder="Название" autocomplete="off" name="">
+                                </div>
                             </div>
-                            <div class="col-sm-6 col-md-3">
-                                <label class="label-input" for="marka-input">Марка</label>
-                                <select class="form-control select-input" name="" id="marka-input">
-                                    <option value="BMW">BMW</option>
-                                    <option value="Lada">Lada</option>
-                                </select>
+                            <div class="col-md-6">
+                                <div class="form-group form-group-sign">
+                                    <label class="label-input" for="marka-input">Марка</label>
+                                    <select class="form-control select-input" name="" id="marka-input">
+                                            <option value="BMW">BMW</option>
+                                            <option value="Lada">Lada</option>
+                                        </select>
+                                </div>
                             </div>
-                            <div class="col-sm-12 col-md-3">
-                                <label class="label-input" for="model-input">Модель</label>
-                                <select class="form-control select-input" name="" id="model-input">
-                                    <option value="Четырка">Четырка</option>
-                                    <option value="X7">X6</option>
-                                    <option value="Priora">Priora</option>
-                                </select>
+                            <div class="col-md-6">
+                                <div class="form-group form-group-sign">
+                                    <label class="label-input" for="model-input">Модель</label>
+                                    <select class="form-control select-input" name="" id="model-input">
+                                            <option value="Четырка">Четырка</option>
+                                            <option value="X7">X6</option>
+                                            <option value="Priora">Priora</option>
+                                        </select>
+                                </div>
                             </div>
-                            <div class="col-sm-12 col-md-6 order-1 order-sm-1 order-md-0">
-                                <div class="row">
-                                    <div class="col-sm-6 col-md-6">
-                                        <label class="label-input" for="modify-input">Модификация</label>
-                                        <select class="form-control select-input" name="" id="modify-input">
+                            <div class="col-md-6">
+                                <div class="form-group form-group-sign">
+                                    <label class="label-input" for="modify-input">Модификация</label>
+                                    <select class="form-control select-input" name="" id="modify-input">
                                             <option value="1.6 twin-turbo">1.6 twin-turbo</option>
                                             <option value="Чёткий салон">Чёткий салон</option>
                                         </select>
-                                    </div>
-                                    <div class="col-sm-6 col-md-6">
-                                        <label class="label-input" for="date-input">Срок исполнения</label>
-                                        <input type="date" class="form-control" id="date-input" name="">
-                                    </div>
-                                    <div class="col-sm-6 col-md-6">
-                                        <label class="file-input-label text-center" for="file-input">Загрузить файлы <img src="./img/upload.svg" alt="Загрузить файлы"></label>
-                                        <input type="file" name="file" class="file-input" id="file-input" multiple>
-                                    </div>
-                                    <div class="col-sm-6 col-md-6">
-                                        <label class="custom-radio">Разрешить готовые файлы
-                                            <input type="checkbox" name="">
-                                            <span class="checkmark checkmark-checkbox"></span>
-                                        </label>
-                                    </div>
-                                    <div class="col-sm-6" id="file-list">
-                                    </div>
-                                    <div class="col-sm-6 col-md-6">
-                                        <div class="dropdown show">
-                                            <button type="button" class="btn signup-next signup-next-first dropdown-toggle dropdown-toggle-filter dropdown-toggle-add-order" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                              Виды работ
-                                            </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 text-right add-order-button-cont">
+                            <!-- Устанавливаем атрибут disabled если поля формы не заполнены -->
+                            <button type="button" class="btn btn-warning signup-next text-right">Далее</button>
+                        </div>
+                        <div class="col-12 text-center">
+                            <a class="help-link text-success" href="#">Помощь техподдержки</a>
+                        </div>
+                    </div>
 
-                                            <div class="dropdown-menu dropdown-menu-filter">
-                                                <label class="custom-radio">Дефектовка
-                                                    <input type="checkbox" checked="checked" name="radio">
-                                                    <span class="checkmark checkmark-checkbox"></span>
-                                                </label>
-                                                <label class="custom-radio">Проточка
-                                                    <input type="checkbox" name="radio">
-                                                    <span class="checkmark checkmark-checkbox"></span>
-                                                </label>
-                                                <label class="custom-radio">Покраска
-                                                    <input type="checkbox" name="radio">
-                                                    <span class="checkmark checkmark-checkbox"></span>
-                                                </label>
-                                                <label class="custom-radio">Диагностика
-                                                    <input type="checkbox" name="radio">
-                                                    <span class="checkmark checkmark-checkbox"></span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6 col-md-6">
-                                        <label class="custom-radio">Фиксированная цена
-                                            <input type="checkbox" name="fix-price">
+                    <div class="sign-up-slider-item form-group-add-order">
+                        <div class="sign-up-step">Шаг 2. Загрузите необходимые файлы</div>
+                        <div class="form-group form-group-sign row">
+                            <div class="col-sm-6 col-md-6">
+                                <label class="file-input-label text-center" for="file-input">Загрузить файлы <img src="./img/upload.svg" alt="Загрузить файлы"></label>
+                                <input type="file" name="file" class="file-input" id="file-input" multiple>
+                            </div>
+                            <div class="col-sm-6 col-md-6 d-flex align-items-center">
+                                <label class="custom-radio">Разрешить готовые файлы
+                                    <input type="checkbox" name="">
+                                    <span class="checkmark checkmark-checkbox"></span>
+                                </label>
+                            </div>
+                            <div class="col-sm-6 d-none d-sm-block">
+                                <div class="file-zone">
+                                    <div id="drop_zone">Перетащите сюда файлы</div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6" id="file-list"></div>
+                        </div>
+                        <!-- Устанавливаем атрибут disabled если поля формы не заполнены -->
+                        <div class="slider-buttons-cont">
+                            <button type="button" class="btn btn-warning signup-prev">Назад</button>
+                            <button type="button" class="btn btn-warning signup-next">Далее</button>
+                        </div>
+                        <div class="col-12 text-center">
+                            <a class="help-link text-success" href="#">Помощь техподдержки</a>
+                        </div>
+                    </div>
+
+                    <div class="sign-up-slider-item form-group-add-order">
+                        <div class="sign-up-step">Последний шаг. Заполните оставшиеся поля</div>
+                        <div class="form-group form-group-sign row">
+                            <div class="col-sm-6 col-md-6">
+                                <label class="label-input" for="date-input">Срок исполнения</label>
+                                <input type="date" class="form-control" id="date-input" name="">
+                            </div>
+                            <div class="col-sm-6 col-md-6">
+                                <div class="dropdown show">
+                                    <button type="button" class="btn signup-next-first dropdown-toggle dropdown-toggle-filter dropdown-toggle-add-order" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Виды работ
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-filter">
+                                        <label class="custom-radio">Дефектовка
+                                            <input type="checkbox" checked="checked" name="radio">
                                             <span class="checkmark checkmark-checkbox"></span>
                                         </label>
-                                    </div>
-                                    <div class="col-sm-6 col-md-6">
-                                        <label class="label-input" for="price-input">Сумма</label>
-                                        <input type="text" class="form-control" id="price-input" name="">
-                                    </div>
-                                    <div class="col-sm-12">
-                                        <button type="submit" class="btn btn-warning signup-next public-order">Опубликовать</button>
+                                        <label class="custom-radio">Проточка
+                                            <input type="checkbox" name="radio">
+                                            <span class="checkmark checkmark-checkbox"></span>
+                                        </label>
+                                        <label class="custom-radio">Покраска
+                                            <input type="checkbox" name="radio">
+                                            <span class="checkmark checkmark-checkbox"></span>
+                                        </label>
+                                        <label class="custom-radio">Диагностика
+                                            <input type="checkbox" name="radio">
+                                            <span class="checkmark checkmark-checkbox"></span>
+                                        </label>
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="col-sm-12 col-md-6 order-0 order-sm-0 order-md-1">
-                                <label class="label-input" for="desc-input">Описание</label>
+                            <div class="col-sm-12">
+                                <label class="label-input desc-label" for="desc-input">Описание</label>
                                 <textarea class="desc-input-text" name="" id="desc-input"></textarea>
                             </div>
+                            <div class="col-sm-6 col-md-6">
+                                <label class="label-input" for="price-input">Сумма</label>
+                                <input type="text" class="form-control" id="price-input" name="">
+                                <label class="custom-radio custom-radio-order">Фиксированная цена
+                                    <input type="checkbox" name="fix-price">
+                                    <span class="checkmark checkmark-checkbox"></span>
+                                </label>
+                            </div>
                         </div>
-                    </form>
+                        <!-- Устанавливаем атрибут disabled если поля формы не заполнены -->
+                        <div class="slider-buttons-cont">
+                            <button type="button" class="btn btn-warning signup-prev">Назад</button>
+                            <button type="button" class="btn btn-warning signup-next">Опубликовать</button>
+                        </div>
+                        <div class="col-12 text-center">
+                            <a class="help-link text-success" href="#">Помощь техподдержки</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

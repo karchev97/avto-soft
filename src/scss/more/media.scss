@@ -54,6 +54,16 @@
     .public-order {
         width: 100%;
     }
+    .dev-block {
+        &>.row {
+            &>div {
+                margin-bottom: 3px;
+            }
+        }
+    }
+    .profile-container {
+        padding: 20px;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -93,6 +103,10 @@
         margin-top: 15px;
         margin-bottom: 15px;
     }
+    .profile-container {
+        max-width: 90%;
+        margin-left: 5%;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -113,6 +127,14 @@
     }
     .order-items {
         max-width: 100%;
+    }
+    .profile-container {
+        &__ava {
+            &>div {
+                width: 80px;
+                height: 80px;
+            }
+        }
     }
 }
 
