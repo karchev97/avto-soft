@@ -64,6 +64,13 @@
     .profile-container {
         padding: 20px;
     }
+
+    // news pages
+    .row-news {
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: 20px;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -107,6 +114,17 @@
         max-width: 90%;
         margin-left: 5%;
     }
+
+    // news pages
+    .container-news {
+        max-width: 100%;
+    }
+
+    .row-news {
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: 20px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -135,6 +153,11 @@
                 height: 80px;
             }
         }
+    }
+
+    // news pages
+    .container-news {
+        max-width: 100%;
     }
 }
 
